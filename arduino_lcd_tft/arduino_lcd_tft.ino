@@ -1,3 +1,4 @@
+
 #include <SPI.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_ST7735.h>
@@ -177,6 +178,7 @@ void Showgames(){
   }
   if (digitalRead(start_button) == 0) {
       play=select;
+      select=2;
       z=0;
       tft.fillScreen(BLACK);
       }
